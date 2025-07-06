@@ -8,7 +8,7 @@ CREATE OR REPLACE API INTEGRATION git_api_integration
 CREATE OR REPLACE SECRET github_password_secret
   TYPE = PASSWORD
   USERNAME = 'ranaomershehzad'  -- GitHub username
-  PASSWORD = 'my-access-token';  -- replace with your actual GitHub PAT
+  PASSWORD = 'my-access-token';  -- actual GitHub PAT
 
 -- 3: Authorise the Secret for the Integration
 ALTER API INTEGRATION git_api_integration
@@ -22,3 +22,9 @@ CREATE OR REPLACE GIT REPOSITORY expenses_repo
 
 -- 5: Confirm Setup
 SHOW GIT BRANCHES IN GIT REPOSITORY expenses_repo;
+
+-- 6: Can check your secrets info here - this will show the record of the APIs and secrets in there:
+SHOW SECRETS IN SCHEMA EXPENSES_DB.PUBLIC;
+SHOW API INTEGRATIONS;
+
+
