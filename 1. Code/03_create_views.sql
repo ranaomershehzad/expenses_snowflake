@@ -6,6 +6,7 @@ SELECT
     amount,
     'Amex' AS payment_method
 FROM "EXPENSES_DB"."PUBLIC"."AMEX_EXPENSES"
+WHERE amount > 0
 UNION
 SELECT 
     TO_DATE(date, 'DD/MM/YYYY') AS tran_date,
