@@ -1,24 +1,7 @@
--- Add new expense types
-INSERT INTO EXPENSES_DB.PUBLIC.EXPENSES_CATEGORY (EXP_NAME, CAT_ID) VALUES
-('Fast Transfer', 10),
-('CULTURE KINGS', 14),
-('NANDO', 2),
-('HOME AFFAIRS', 19),
-('INDITEX', 14),
-('HAKATA GENSUKE', 2),
-('PayID Payment Received, Thank you', 10),
-('Salary Remitter GOPPL', 10),
-('BUPA MEDICAL', 19),
-('JETSTAR', 18),
-('HI THAI', 2),
-('Atwell Fish', 2),
-('HOTHAM VALLEY', 18),
-('Y D', 14),
-('DIDI', 10),
-('EasyPark', 17),
-('LAL QILA', 2),
-('ASSURANCE VENTURE', 5),
-('ONLINE PAYMENT RECEIVED', 10);
+/*_____________________________
+| Update some datasets manually|
+| to adjust new transactions   |
+|_____________________________*/
 
 -- Reassign some right categories
 UPDATE EXPENSES_DB.PUBLIC.EXPENSES_CATEGORY
