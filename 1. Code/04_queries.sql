@@ -1,7 +1,7 @@
 /*__________________________
 | Below are some sql queries|
-| that are to done on the   |
-| views that were created   | 
+| that are done on the views|
+| that were created earlier | 
 |__________________________*/
 
 -- 1. Summarise each total expenses by month:
